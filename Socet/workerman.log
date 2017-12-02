@@ -1,0 +1,209 @@
+2017-12-01 18:47:01 pid:4146 Workerman[Socet.php] stopping ...
+2017-12-01 18:47:01 pid:4146 Workerman[Socet.php] has been stopped
+2017-12-01 20:30:32 pid:1543 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 16:52:19 pid:1543 Workerman[Socet.php] stopping ...
+2017-12-02 16:52:19 pid:1543 Workerman[Socet.php] has been stopped
+2017-12-02 17:02:08 pid:7122 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:14:44 pid:7122 Workerman[Socet.php] stopping ...
+2017-12-02 17:14:44 pid:7122 Workerman[Socet.php] has been stopped
+2017-12-02 17:14:45 pid:7490 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:18:04 pid:7490 Workerman[Socet.php] stopping ...
+2017-12-02 17:18:04 pid:7490 Workerman[Socet.php] has been stopped
+2017-12-02 17:18:14 pid:7729 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:18:47 pid:7729 Workerman[Socet.php] stopping ...
+2017-12-02 17:18:47 pid:7729 Workerman[Socet.php] has been stopped
+2017-12-02 17:18:49 pid:7778 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:22:50 pid:7778 Workerman[Socet.php] stopping ...
+2017-12-02 17:22:50 pid:7778 Workerman[Socet.php] has been stopped
+2017-12-02 17:22:57 pid:8038 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:26:10 pid:8038 Workerman[Socet.php] stopping ...
+2017-12-02 17:26:10 pid:8038 Workerman[Socet.php] has been stopped
+2017-12-02 17:26:12 pid:8296 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:27:48 pid:8301 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:27:48 pid:8301 Worker process terminated
+2017-12-02 17:27:48 pid:8296 worker[none:8301] exit with status 64000
+2017-12-02 17:28:13 pid:8296 Workerman[Socet.php] stopping ...
+2017-12-02 17:28:13 pid:8296 Workerman[Socet.php] has been stopped
+2017-12-02 17:28:15 pid:8414 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:28:19 pid:8418 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:28:19 pid:8418 Worker process terminated
+2017-12-02 17:28:19 pid:8414 worker[none:8418] exit with status 64000
+2017-12-02 17:28:48 pid:8414 Workerman[Socet.php] stopping ...
+2017-12-02 17:28:48 pid:8414 Workerman[Socet.php] has been stopped
+2017-12-02 17:28:49 pid:8467 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:28:54 pid:8471 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:28:54 pid:8471 Worker process terminated
+2017-12-02 17:28:54 pid:8467 worker[none:8471] exit with status 64000
+2017-12-02 17:28:58 pid:8467 Workerman[Socet.php] stopping ...
+2017-12-02 17:28:58 pid:8467 Workerman[Socet.php] has been stopped
+2017-12-02 17:29:00 pid:8508 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:29:03 pid:8510 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:29:03 pid:8510 Worker process terminated
+2017-12-02 17:29:03 pid:8508 worker[none:8510] exit with status 64000
+2017-12-02 17:30:12 pid:8514 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:30:12 pid:8514 Worker process terminated
+2017-12-02 17:30:12 pid:8508 worker[none:8514] exit with status 64000
+2017-12-02 17:30:15 pid:8508 Workerman[Socet.php] stopping ...
+2017-12-02 17:30:15 pid:8508 Workerman[Socet.php] has been stopped
+2017-12-02 17:30:21 pid:8595 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:30:25 pid:8598 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:30:25 pid:8598 Worker process terminated
+2017-12-02 17:30:25 pid:8595 worker[none:8598] exit with status 64000
+2017-12-02 17:34:47 pid:8600 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:42
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "get...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:34:47 pid:8600 Worker process terminated
+2017-12-02 17:34:47 pid:8595 worker[none:8600] exit with status 64000
+2017-12-02 17:34:50 pid:8595 Workerman[Socet.php] stopping ...
+2017-12-02 17:34:50 pid:8595 Workerman[Socet.php] has been stopped
+2017-12-02 17:34:52 pid:8714 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:35:30 pid:8720 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:43
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "set...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "set...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:35:30 pid:8720 Worker process terminated
+2017-12-02 17:35:30 pid:8714 worker[none:8720] exit with status 64000
+2017-12-02 17:35:35 pid:8717 Error: Cannot use object of type stdClass as array in /srv/http/draw_room.com/Socet/Socet.php:43
+Stack trace:
+#0 [internal function]: Socet->{closure}(Object(Workerman\Connection\TcpConnection), '{"action": "set...')
+#1 /srv/http/draw_room.com/Socet/Workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"action": "set...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #34)
+#3 /srv/http/draw_room.com/Socet/Workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#4 /srv/http/draw_room.com/Socet/Workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /srv/http/draw_room.com/Socet/Workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#8 /srv/http/draw_room.com/Socet/Workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#9 /srv/http/draw_room.com/Socet/Socet.php(53): Workerman\Worker::runAll()
+#10 /srv/http/draw_room.com/Socet/Socet.php(62): Socet->__construct()
+#11 {main}
+2017-12-02 17:35:35 pid:8717 Worker process terminated
+2017-12-02 17:35:35 pid:8714 worker[none:8717] exit with status 64000
+2017-12-02 17:36:06 pid:8714 Workerman[Socet.php] stopping ...
+2017-12-02 17:36:06 pid:8714 Workerman[Socet.php] has been stopped
+2017-12-02 17:36:09 pid:8799 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:38:51 pid:8799 Workerman[Socet.php] stopping ...
+2017-12-02 17:38:51 pid:8799 Workerman[Socet.php] has been stopped
+2017-12-02 17:38:52 pid:8965 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:39:58 pid:8965 Workerman[Socet.php] stopping ...
+2017-12-02 17:39:58 pid:8965 Workerman[Socet.php] has been stopped
+2017-12-02 17:40:13 pid:9053 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:40:14 pid:9061 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:40:14 pid:9061 Workerman[/srv/http/draw_room.com/Socet/Socet.php] already running
+2017-12-02 17:40:16 pid:9053 Workerman[Socet.php] stopping ...
+2017-12-02 17:40:16 pid:9053 Workerman[Socet.php] has been stopped
+2017-12-02 17:40:18 pid:9076 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:40:54 pid:9076 Workerman[Socet.php] stopping ...
+2017-12-02 17:40:54 pid:9076 Workerman[Socet.php] has been stopped
+2017-12-02 17:40:59 pid:9132 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:42:46 pid:9132 Workerman[Socet.php] stopping ...
+2017-12-02 17:42:46 pid:9132 Workerman[Socet.php] has been stopped
+2017-12-02 17:42:48 pid:9253 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:47:33 pid:9253 Workerman[Socet.php] stopping ...
+2017-12-02 17:47:33 pid:9253 Workerman[Socet.php] has been stopped
+2017-12-02 17:47:34 pid:9626 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 17:52:53 pid:9626 Workerman[Socet.php] stopping ...
+2017-12-02 17:52:53 pid:9626 Workerman[Socet.php] has been stopped
+2017-12-02 17:52:55 pid:9856 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
+2017-12-02 18:28:04 pid:9856 Workerman[Socet.php] stopping ...
+2017-12-02 18:28:04 pid:9856 Workerman[Socet.php] has been stopped
+2017-12-02 18:28:16 pid:10908 Workerman[/srv/http/draw_room.com/Socet/Socet.php] start in DEBUG mode
