@@ -36,7 +36,7 @@ class Authorize
         if (!array_key_exists("error",$this->user)){
             session_start();
             $_SESSION['user'] = $this->user;
-            header("Location: http://mysites.loc/draw_room.com/room.php");
+            header("Location: http://drawingroom.loc/room.php");
         }
     }
 }

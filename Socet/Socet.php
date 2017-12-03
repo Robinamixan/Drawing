@@ -16,7 +16,7 @@ class Socet
     {
         $this->chanel_server = new Channel\Server('0.0.0.0',2206);
         $this->ws_worker = new Worker("websocket://0.0.0.0:2346");
-        $this->ws_worker->count = 5;
+        $this->ws_worker->count = 4;
 
         $this->ws_worker->onWorkerStart = function ($ws_worker)
         {
@@ -40,7 +40,6 @@ class Socet
                 $this->file_for_save = $temp->img;
                 $connection->send($img);
             }
-
         };
         Worker::runAll();
     }

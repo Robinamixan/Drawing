@@ -18,7 +18,7 @@
             <img src="images/33333.png" class="img-responsive">
             <div class="authoris_panel">
                 <div id="uLogin" class="btn-group authoriz" data-ulogin="display=buttons;fields=first_name,last_name,photo;
-            redirect_uri=http%3A%2F%2Fmysites.loc%2Fdraw_room.com%2F">
+            redirect_uri=http://drawingroom.loc/">
                     <a id="btn_vk" class="btn btn-social btn-vk btn_author" data-uloginbutton = "vkontakte">
                         <span class="fa fa-vk"></span> Sign in with Vkontakte
                     </a>

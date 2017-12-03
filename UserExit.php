@@ -15,7 +15,7 @@ class User_exit
         session_start();
         $this->clear_session();
         session_destroy();
-        header("Location: http://mysites.loc/draw_room.com");
+        header("Location: http://drawingroom.loc/");
     }
 
     private function clear_session(){

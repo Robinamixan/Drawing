@@ -1,5 +1,9 @@
 $(function () {
     var canvas, context, tool;
+    var width_line = 5;
+    var color_line = 'red';
+    var interval = 5;
+    var interval_value = 0;
 
     function init () {
 
@@ -46,9 +50,15 @@ $(function () {
 
         this.mousemove = function (ev) {
             if (tool.started) {
-                send_message_socet_set();
+                if (interval_value == interval) {
+                    send_message_socet_set();
+                    interval_value = 0;
+                }
+                else
+                    interval_value++;
                 context.lineTo(ev._x, ev._y);
-                context.lineWidth = 20;
+                context.strokeStyle = color_line;
+                context.lineWidth = width_line;
                 context.stroke();
             }
         };
@@ -82,12 +92,7 @@ $(function () {
         }
     }
 
-    function send_message_socet_set() {
-        var d = canvas.toDataURL("image/png");
-        var message = '{"action": "set", "img": "' + d + '"}';
-        ws.send(message);
-    }
-
+    init();
     ws = new WebSocket("ws://127.0.0.1:2346");
 
     ws.onopen= function (event) {
@@ -105,5 +110,9 @@ $(function () {
         image.src = e.data;
     };
 
-    init();
+    function send_message_socet_set() {
+        var d = canvas.toDataURL("image/png");
+        var message = '{"action": "set", "img": "' + d + '"}';
+        ws.send(message);
+    }
 });

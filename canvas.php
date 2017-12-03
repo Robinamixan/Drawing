@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html style="height: 100%">
+<html style="height: 100%; background-color: gray">
 <head>
-    <title>Succesfull</title>
+    <title>Room 1</title>
     <meta charset="utf-8" />
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" >
@@ -9,8 +9,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<div style="height: 100%; background-color: gray">
-    <canvas id="conv" width="1500" height="950" style="background-color: white;">
+<div style="height: 100%">
+    <canvas id="conv" width="1500" height="850" style="background-color: white;">
         Element dont work on this browser!
     </canvas>
 </div>
