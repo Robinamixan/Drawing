@@ -9,10 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <title>Drawing rooms</title>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.7-dist/css/metisMenu.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.7-dist/css/morris.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='spectrum/spectrum.css' rel='stylesheet'>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -39,6 +40,20 @@
                         <i class="ti-arrow-circle-left ti-menu"></i>
                     </a>
                 </li>
+            </ul>
+            <ul id="title_room_panel" class="nav navbar-top-links navbar-left pull-left" hidden>
+                <li>
+                    <a class="logo" href="">
+                        <i class="ti-layout fa-fw"></i>&nbsp;
+                        <b><span id="title_room" class="hidden-xs"></span></b>
+                    </a>
+                </li>
+                <li>
+                    <a id="delete_room_btn" href="js" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </li>
+
             </ul>
             <ul class="nav navbar-top-links navbar-right pull-right">
                 <li>
@@ -77,13 +92,13 @@
         </div>
     </div>
     <div id="page-wrapper">
-        <div class="nav navbar-top-links" style="padding-top: 5px; padding-left: 5px">
+        <div class="nav navbar-top-links" style="padding-top: 10px; padding-left: 15px">
             <button class="btn btn-default btn-lg">
                 <span class="glyphicon glyphicon-log-out"></span>
             </button>
-
+            <input type='text' id="custom" />
         </div>
-        <div class="container-fluid" style="padding-top: 10px;height: 95%;width: 100%;position: absolute;">
+        <div class="container-fluid" style="padding-top: 10px;height: 93%;width: 100%;position: absolute;">
             <iframe ID="field_draw" src="canvas.php" width="100%" height="100%" align="left">
                 It not work
             </iframe>
@@ -91,6 +106,7 @@
     </div>
 </div>
 <!-- jQuery -->
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
@@ -99,6 +115,7 @@
 <script src="js/waves.js"></script>
 <script src="js/myadmin.js"></script>
 <script src="js/rooms.js"></script>
+<script src='spectrum/spectrum.js'></script>
 </body>
 
 </html>

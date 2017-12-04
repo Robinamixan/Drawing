@@ -1,8 +1,8 @@
 $(function () {
     var canvas, context, tool;
-    var width_line = 5;
-    var color_line = 'red';
-    var interval = 5;
+    var width_line = $('#width_brush').text();
+    var color_line = $('#color_brush').text();
+    var interval = 10;
     var interval_value = 0;
 
     function init () {
@@ -115,4 +115,8 @@ $(function () {
         var message = '{"action": "set", "img": "' + d + '"}';
         ws.send(message);
     }
+
+    $('#color_brush').bind('DOMSubtreeModified',function () {
+        color_line = $(this).text();
+    });
 });

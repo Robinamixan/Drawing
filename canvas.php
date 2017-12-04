@@ -9,6 +9,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+<div hidden>
+    <span id="active_tool">brush</span>
+    <span id="width_brush">5</span>
+    <span id="color_brush">#223355</span>
+</div>
 <div style="height: 100%">
     <canvas id="conv" width="1500" height="850" style="background-color: white;">
         Element dont work on this browser!

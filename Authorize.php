@@ -17,7 +17,7 @@ class Authorize
         $this->check_session();
         echo '<a class="profile-pic" href="#">' ;
         echo '<img src="' . $this->user['photo'] . '" alt="user-img" width="36" class="img-circle">';
-        echo '<b class="hidden-xs">' . $this->user['first_name']. " " . $this->user['last_name'] . '</b> </a>';
+        echo '<b id="user_name" class="hidden-xs">' . $this->user['first_name']. " " . $this->user['last_name'] . '</b> </a>';
     }
 
     private function check_session(){
@@ -36,7 +36,7 @@ class Authorize
         if (!array_key_exists("error",$this->user)){
             session_start();
             $_SESSION['user'] = $this->user;
-            header("Location: http://drawingroom.loc/room.php");
+            header("Location: http://drawingroom.loc/Room.php");
         }
     }
 }

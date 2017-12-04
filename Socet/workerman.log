@@ -235,3 +235,34 @@ Stack trace:
 2017-12-04 04:27:26 pid:28691 Workerman[Socet.php] stopping ...
 2017-12-04 04:27:26 pid:28691 Workerman[Socet.php] has been stopped
 2017-12-04 04:27:28 pid:28911 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 06:06:17 pid:1878 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 06:06:17 pid:1878 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 06:19:45 pid:1579 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:36:02 pid:2734 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:36:02 pid:2734 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:39:00 pid:2885 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:39:00 pid:2885 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:39:05 pid:2887 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:39:05 pid:2887 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:39:20 pid:2897 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:39:20 pid:2897 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:39:49 pid:2938 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:39:49 pid:2938 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:40:19 pid:2982 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:40:19 pid:2982 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:40:44 pid:2999 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:40:44 pid:2999 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:40:51 pid:3002 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:40:51 pid:3002 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:41:14 pid:3011 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:41:14 pid:3011 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:41:57 pid:3043 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:41:57 pid:3043 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:41:58 pid:3050 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:41:58 pid:3050 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:42:04 pid:3053 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:42:04 pid:3053 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:43:05 pid:3135 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:43:05 pid:3135 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
+2017-12-04 15:44:04 pid:3284 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2017-12-04 15:44:04 pid:3284 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] already running
