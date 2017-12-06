@@ -32,16 +32,35 @@ class Socet
         {
             $temp = json_decode($data);
             if($temp->action == "set"){
-                Channel\Client::publish('broadcast', $temp->img);
-                $this->saveImage($temp->img);
+                if (file_exists($this->file_for_save)) {
+                    $json_message = $this->getJSON($this->file_for_save, $temp->img);
+                    Channel\Client::publish('broadcast', $json_message);
+                    $this->saveImage($temp->img);
+
+                } else {
+                    $connection->send("file_not_found");
+                }
+
             }
             elseif ($temp->action == "get"){
-                $img = file_get_contents($temp->img);
                 $this->file_for_save = $temp->img;
-                $connection->send($img);
+                if (file_exists($this->file_for_save)) {
+                    $img = file_get_contents($this->file_for_save);
+                    $json_message = $this->getJSON($this->file_for_save, $img);
+                    $connection->send($json_message);
+                } else {
+                    $connection->send("file_not_found");
+                }
+
             }
         };
         Worker::runAll();
+    }
+
+    private function getJSON(string $file, string $img):string
+    {
+        $message = array('room' => $file, 'img' => $img);
+        return json_encode ($message);
     }
 
     private function saveImage($data)

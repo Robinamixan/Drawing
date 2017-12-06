@@ -98,7 +98,6 @@ $(function () {
     ws.onopen= function (event) {
         var link = '../image_room/'+document.title+'.txt';
         var message = '{"action": "get", "img": "' + link + '"}';
-
         ws.send(message);
     };
 
@@ -107,7 +106,18 @@ $(function () {
         image.onload = function () {
             context.drawImage(image, 0, 0);
         };
-        image.src = e.data;
+
+        if (e.data !== 'file_not_found')
+        {
+            var obj = $.parseJSON(e.data);
+            var currentroom = '../image_room/'+document.title+'.txt';
+            if (currentroom === obj.room)
+                image.src = obj.img;
+        } else {
+            canvas.style.display="none";
+            $('#er404').show();
+        }
+
     };
 
     function send_message_socet_set() {
@@ -118,5 +128,9 @@ $(function () {
 
     $('#color_brush').bind('DOMSubtreeModified',function () {
         color_line = $(this).text();
+    });
+
+    $('#width_brush').bind('DOMSubtreeModified',function () {
+        width_line = $(this).text();
     });
 });

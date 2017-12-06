@@ -16,7 +16,6 @@
     <link href='spectrum/spectrum.css' rel='stylesheet'>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -43,9 +42,9 @@
             </ul>
             <ul id="title_room_panel" class="nav navbar-top-links navbar-left pull-left" hidden>
                 <li>
-                    <a class="logo" href="">
+                    <a href="">
                         <i class="ti-layout fa-fw"></i>&nbsp;
-                        <b><span id="title_room" class="hidden-xs"></span></b>
+                        <b><span id="title_room"></span></b>
                     </a>
                 </li>
                 <li>
@@ -76,30 +75,44 @@
         <div class="sidebar-nav navbar-collapse ">
             <ul class="nav" id="side-menu">
                 <li class="in">
-                    <form id="create_form" role="search" class="app-search hidden-xs" method="post" hidden>
+                    <form id="create_form" role="search" class="app-search hidden-xs" hidden>
                         <input type="text" class="form-control" id="room_name" name="room_name" placeholder="Room name">
                     </form>
-
-                    <?php include 'Create_new_file.php'?>
-
                     <a href="js" id="add_room" class="waves-effect" style="color: green"><span class="glyphicon glyphicon-plus"></span> Add new room</a>
                 </li>
                 <?php
-                include 'Generate_list_rooms.php';
-                new Generate_list_rooms();
+                include 'GenerateListRooms.php';
+                new GenerateListRooms();
                 ?>
             </ul>
         </div>
     </div>
     <div id="page-wrapper">
-        <div class="nav navbar-top-links" style="padding-top: 10px; padding-left: 15px">
+        <div id="toolbar_paint" class="nav navbar-top-links">
             <button class="btn btn-default btn-lg">
-                <span class="glyphicon glyphicon-log-out"></span>
+                <span class="glyphicon glyphicon-pencil"></span>
             </button>
             <input type='text' id="custom" />
+
+            <div id="spinner_tool">
+                <div class="input-group number-spinner">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-lg" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span>
+                    </button>
+				</span>
+                    <input type="text" class="form-control text-center" value="5" style="height: 42px; border-color: #cccccc">
+                    <span class="input-group-btn">
+					<button class="btn btn-default btn-lg" data-dir="up"><span class="glyphicon glyphicon-plus"></span>
+                    </button>
+				</span>
+                </div>
+            </div>
+
+
+
         </div>
         <div class="container-fluid" style="padding-top: 10px;height: 93%;width: 100%;position: absolute;">
-            <iframe ID="field_draw" src="canvas.php" width="100%" height="100%" align="left">
+            <iframe ID="field_draw" src="Canvas.php" width="100%" height="100%" align="left">
                 It not work
             </iframe>
         </div>
@@ -117,5 +130,4 @@
 <script src="js/rooms.js"></script>
 <script src='spectrum/spectrum.js'></script>
 </body>
-
 </html>

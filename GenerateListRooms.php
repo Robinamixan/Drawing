@@ -6,7 +6,8 @@
  * Time: 13:13
  */
 
-class Generate_list_rooms{
+class GenerateListRooms
+{
     function __construct()
     {
         foreach (glob("image_room/*.txt") as $filename){

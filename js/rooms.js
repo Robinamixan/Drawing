@@ -28,14 +28,14 @@ $(function () {
 
     $('#delete_room_btn').click(function (evt) {
         $(arguments).get(0).preventDefault();
-        $.get('../Delete_new_file.php?room_name=' + $('#title_room').text());
+        $.get('../DeleteFile.php?room_name=' + $('#title_room').text());
         location.reload();
     });
 
-    $('#create_room').click(function (evt) {
-        $(arguments).get(0).preventDefault();
-        $('#create_form').hide();
-        $('#add_room').show();
+    $('#create_form').submit(function (evt) {
+        $.get('../CreateNewFile.php?room_name=' + $('#room_name').val());
+        location.reload();
+        return false;
     });
 
     function resetLinks() {
@@ -56,9 +56,15 @@ $(function () {
             change_brush_color($("#custom").spectrum("get"));
         });
     }
+
     function change_brush_color(color) {
         var h = $('#field_draw').contents().find('#color_brush');
         h.text(color.toHexString());
+    }
+
+    function change_width_color(wd) {
+        var h = $('#field_draw').contents().find('#width_brush');
+        h.text(wd);
     }
 
     $("#custom").spectrum({
@@ -66,5 +72,23 @@ $(function () {
         change: function(color) {
             change_brush_color(color);
          }
+    });
+
+    $(document).on('click', '.number-spinner button', function () {
+        var btn = $(this),
+            oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+            newVal = 0;
+
+        if (btn.attr('data-dir') == 'up') {
+            newVal = parseInt(oldValue) + 1;
+        } else {
+            if (oldValue > 1) {
+                newVal = parseInt(oldValue) - 1;
+            } else {
+                newVal = 1;
+            }
+        }
+        btn.closest('.number-spinner').find('input').val(newVal);
+        change_width_color(newVal);
     });
 });
