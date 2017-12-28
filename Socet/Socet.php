@@ -40,7 +40,6 @@ class Socet
                 } else {
                     $connection->send("file_not_found");
                 }
-
             }
             elseif ($temp->action == "get"){
                 $this->file_for_save = $temp->img;

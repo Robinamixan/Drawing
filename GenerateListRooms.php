@@ -13,7 +13,7 @@ class GenerateListRooms
         foreach (glob("image_room/*.txt") as $filename){
             $name =  basename($filename, ".txt"). '<br>';
             echo '<li>';
-            echo'<a href="js" class="rooms waves-effect no_active" style="color: white"><i class="ti-layout fa-fw"></i>' . $name . '</a>';
+            echo'<a href="javascript:void(0)" class="rooms waves-effect no_active" style="color: white"><i class="ti-layout fa-fw"></i>' . $name . '</a>';
             echo '</li>';
         }
     }

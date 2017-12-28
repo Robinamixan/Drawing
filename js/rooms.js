@@ -3,7 +3,7 @@ $(function () {
     $('#field_draw').hide();
 
     $('.rooms').click(function (evt) {
-        $(arguments).get(0).preventDefault();
+        evt.preventDefault();
 
         if ($('#user_name').text() !== 'undefined user '){
             $('#field_draw').show();
@@ -29,7 +29,7 @@ $(function () {
     $('#delete_room_btn').click(function (evt) {
         $(arguments).get(0).preventDefault();
         $.get('../DeleteFile.php?room_name=' + $('#title_room').text());
-        location.reload();
+        //location.reload();
     });
 
     $('#create_form').submit(function (evt) {

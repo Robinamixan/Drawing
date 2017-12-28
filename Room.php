@@ -78,7 +78,7 @@
                     <form id="create_form" role="search" class="app-search hidden-xs" hidden>
                         <input type="text" class="form-control" id="room_name" name="room_name" placeholder="Room name">
                     </form>
-                    <a href="js" id="add_room" class="waves-effect" style="color: green"><span class="glyphicon glyphicon-plus"></span> Add new room</a>
+                    <a href="javascript:void(0)" id="add_room" class="waves-effect" style="color: green"><span class="glyphicon glyphicon-plus"></span> Add new room </a>
                 </li>
                 <?php
                 include 'GenerateListRooms.php';
