@@ -320,3 +320,7 @@ Stack trace:
 2017-12-13 00:55:12 pid:22863 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
 2017-12-13 02:44:26 pid:22863 Workerman[Socet.php] stopping ...
 2017-12-13 02:44:26 pid:22863 Workerman[Socet.php] has been stopped
+2017-12-29 00:22:45 pid:29678 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2018-02-20 11:48:37 pid:1653 Workerman[/home/robinam/Sites/Drawing/Socet/Socet.php] start in DEBUG mode
+2018-02-20 11:50:39 pid:1653 Workerman[Socet.php] stopping ...
+2018-02-20 11:50:39 pid:1653 Workerman[Socet.php] has been stopped
